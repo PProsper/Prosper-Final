@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pr&#233;t-Style </title>
+	<link rel="stylesheet" type="text/css" href="css/temp.css">
+<style type="text/css">
+#back{
+	height: 55em;
+}
+.emo{
+	height: 8em; 
+	width: 8em;
+	margin-right: 80%;
+}
+.icon{
+	width: 50%;
+}
+.reel{
+	width: 50%
+}
+form{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+table, th{
+    border: 1px solid black;
+}
+footer{
+	margin-top:68%;
+}
+</style>
+<header>
+	<div id="title">
+	<div id="logo"> 
+	<a href="PretStyle.html"><img src="images/log2.png" width="600" height="250"></a> 
+	</div>
+		<center>
+		<div id="nav">
+				<ul>
+				<div class="dropdown">
+					<li><button class="but" onclick="dropfunc()"> <a class="dropbtn" href="products.html"> Shop </a></button></li>
+						<div id="mydropdown" class= "content">
+							<a href="accessories.html"> Accessorize </a></a>
+							<a href="beauty.html"> Beautify </a></a>
+							<a href="clothes.html"> Clothing </a></a>
+							<a href="health.html"> Health </a></a>
+							<a href="footwear.html"> Shoes </a></a>
+						</div>
+				</div>
+					<li><a href="guide.html" class="active"> Guide </a></li> 	
+					<li><a href="blog.html" class="active"> Blog </a></li>
+					<li><a href="account.html" class="active"> My Account </a></li> 	
+					<li><a href="contact.html" class="active"> Contact Us </a></li> 	
+				</ul>
+		</div>
+	</center>
+</header>
+<body>
+<div id="back">
+<center><h1> Product Categories</h1></center> 
+<form>
+<TABLE style="width: 100%"> 
+<TR>
+<th>
+<div id="acc" class="icon">
+<!--http://www.emoji.co.uk/view/203/-->
+<a href="accessories.html"><img class="emo" src="images/handbag.png"></a>
+<th>
+<div class="reel">
+</div>
+</th>
+</TR>
+
+<TR>
+<th>
+<div id="clo" class="icon">
+<!--https://www.pinterest.com/renatraab/emoji/-->
+<a href="accessories.html"><img class="emo" src="images/dress.jpg"></a>
+<th>
+<div class="reel">
+</div>
+</th>
+</TR>
+
+<TR>
+<th>
+<div id="hea" class="icon">
+<!--http://greatist.com/move/when-to-lift-more-weight-->
+<a href="accessories.html"><img class="emo" src="images/health.png"></a>
+<th>
+<div class="reel">
+</div>
+</th>
+</TR>
+
+<TR>
+<th>
+<div id="jew" class="icon">
+<!--https://www.iconfinder.com/icons/545875/accessories_fashion_jewelry_lady_style_woman_icon -->
+<a href="accessories.html"><img class="emo" src="images/jewelry.png"></a>
+<th>
+<div class="reel">
+</div>
+</th>
+</TR>
+
+<TR>
+<th>
+<div id="sho" class="icon">
+<!--https://www.pinterest.com/pin/379569074823020844/-->
+<a href="accessories.html"><img class="emo" src="images/shoes.jpg"></a>
+<th>
+<div class="reel">
+</div>
+</th>
+</TR>
+</TABLE>
+</form>
+</div>
+</body>
+<footer>
+<div id="copy">
+	 <p id="cop">  &#169; 2016 P.S. Inc. &#174; All rights reserved </p>
+</div>
+<div id="icon">
+	<a href="https://www.facebook.com"><img src="images/fb.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://twitter.com"><img src="images/twit.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.instagram.com/?hl=en"><img src="images/insta.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.tumblr.com"><img src="images/tumb.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.youtube.com"><img src="images/yt.png" style="width: 50px;height: 50px;"></a>
+</div>
+</footer>
+<script type="text/javascript">
+	function dropfunc() {
+	document.getElementById("mydropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

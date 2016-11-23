@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pr&#233;t-Style </title>
+	<link rel="stylesheet" type="text/css" href="css/temp.css">
+<style>
+#back{
+		margin-top: .5%;
+	}
+input [type="text"]{
+		font-family: sans-serif;
+		font-size: 24px;
+	}
+input [type="text"]:focus{
+		background-color:blue;
+	}
+</style>
+</head>
+<header>
+	<div id="title">
+	<div id="logo"> 
+	<a href="PretStyle.html"><img src="images/log2.png" width="600" height="250"></a> 
+	</div>
+		<center>
+		<div id="nav">
+				<ul>
+				<div class="dropdown">
+					<li><button class="but" onclick="dropfunc()"> <a class="dropbtn" href="products.html"> Shop </a></button></li>
+						<div id="mydropdown" class= "content">
+							<a href="accessories.html"> Accessorize </a></a>
+							<a href="beauty.html"> Beautify </a></a>
+							<a href="clothes.html"> Clothing </a></a>
+							<a href="health.html"> Health </a></a>
+							<a href="footwear.html"> Shoes </a></a>
+						</div>
+				</div>
+					<li><a href="guide.html" class="active"> Guide </a></li> 	
+					<li><a href="blog.html" class="active"> Blog </a></li>
+					<li><a href="account.html" class="active"> My Account </a></li> 	
+					<li><a href="contact.html" class="active"> Contact Us </a></li> 	
+				</ul>
+		</div>
+	</center>
+</header>
+<br>
+<body>
+<center>
+<div id="back">
+<center><h1> Contact Pr&#233;t-Style </h1></center>
+<div id="mess">
+<form> 
+		<h3> Give Us Your Feedback! </h3>
+		Message: <br>
+		<input type="text" name="Message" style="width: 700px; height: 200px"> <br><br>
+		<input type="button" name="Submit" value="Submit">
+</form>
+</div>
+</div>
+</center>
+</body>
+<style type="button/css">
+	input[type="button"]{ 
+		border: 2px solid black;
+		padding-left:0;
+		padding-top:0;
+		padding-bottom:0.4em;
+		padding-right: 0.4em;	
+	}
+	input[type="button"]:hover{ 
+		padding: 3px; 
+		background-color: rgba(245, 236,248, 1);
+	}
+</style>
+<footer>
+<div id="copy">
+	 <p id="cop">  &#169; 2016 P.S. Inc. &#174; All rights reserved </p>
+</div>
+<div id="icon">
+	<a href="https://www.facebook.com"><img src="images/fb.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://twitter.com"><img src="images/twit.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.instagram.com/?hl=en"><img src="images/insta.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.tumblr.com"><img src="images/tumb.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.youtube.com"><img src="images/yt.png" style="width: 50px;height: 50px;"></a>
+</div>
+</footer>
+<script type="text/javascript">
+	function dropfunc() {
+	document.getElementById("mydropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

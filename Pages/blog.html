@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pr&#233;t-Style </title>
+	<link rel="stylesheet" type="text/css" href="css/temp.css">
+<style type="text/css">
+#gg{
+	position: absolute;
+	border: solid 1px;
+	border-color: black; 
+	margin-top: 8%;
+	margin-left: 53%;
+	text-align: justify;
+	width: 40%;
+	height: 80%;
+}
+#zm{
+	position: absolute;
+	border: solid 1px;
+	border-color: black; 
+	margin-top: 8%;
+	margin-left: 8%;
+	text-align: justify;
+	width: 40%;
+	height: 80%;
+}
+h3, h4, p{
+	margin-left: 24%;
+	margin-right: 24%;
+}
+footer{
+	margin-top: 62%;
+}
+</style>
+<header>
+	<div id="title">
+	<div id="logo"> 
+	<a href="PretStyle.html"><img src="images/log2.png" width="600" height="250"></a> 
+	</div>
+		<center>
+		<div id="nav">
+				<ul>
+				<div class="dropdown">
+					<li><button class="but" onclick="dropfunc()"> <a class="dropbtn" href="products.html"> Shop </a></button></li>
+						<div id="mydropdown" class= "content">
+							<a href="accessories.html"> Accessorize </a></a>
+							<a href="beauty.html"> Beautify </a></a>
+							<a href="clothes.html"> Clothing </a></a>
+							<a href="health.html"> Health </a></a>
+							<a href="footwear.html"> Shoes </a></a>
+						</div>
+				</div>
+					<li><a href="guide.html" class="active"> Guide </a></li> 	
+					<li><a href="blog.html" class="active"> Blog </a></li>
+					<li><a href="account.html" class="active"> My Account </a></li> 	
+					<li><a href="contact.html" class="active"> Contact Us </a></li> 	
+				</ul>
+		</div>
+	</center>
+</header>
+<body>
+<div id="back">
+<center><h1>Pr&#233;t-Style Blog</h1></center> 
+</div>
+<div id="gg"><h3>"How Nordic Fashion Has Originated the Modern Looks We Love So Much" </h3>
+<p>June 1, 2016</p>
+<h4>by Patrice Prosper</h4>
+<center><a href="http://www.globalglam.com/nordic-fashion/"><img src="images/Fillipa-K.2.jpg" width="300" height="400" style="border: solid 1px;"></a>
+<p> as seen on Globalglam.com </p>
+</center>
+
+</div>
+<div id="zm"><h3>"Great Ways To Rock African Prints This Month" </h3>
+<p>October 17, 2016</p>
+<h4>Aissata Diallo&#146;s Edition" </h4>
+<center><a href="http://zenmagazineafrica.com/fashion/great-ways-to-rock-african-prints-this-month-aissata-diallos-edition/"><img src="images/zmskirt.jpg" width="300" height="400" style="border: solid 1px;"></a>
+<p> as seen on Zenmagazineafrica.com </p>
+</center>
+
+</div>
+</body>
+<footer>
+<div id="copy">
+	 <p id="cop">  &#169; 2016 P.S. Inc. &#174; All rights reserved </p>
+</div>
+<div id="icon">
+	<a href="https://www.facebook.com"><img src="images/fb.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://twitter.com"><img src="images/twit.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.instagram.com/?hl=en"><img src="images/insta.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.tumblr.com"><img src="images/tumb.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.youtube.com"><img src="images/yt.png" style="width: 50px;height: 50px;"></a>
+</div>
+</footer>
+<script type="text/javascript">
+	function dropfunc() {
+	document.getElementById("mydropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

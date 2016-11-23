@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pr&#233;t-Style </title>
+	<link rel="stylesheet" type="text/css" href="css/temp.css">
+<style type="text/css">
+#back{
+	height: 50em;
+}
+.img{
+	height: 8em; 
+	width: 8em;
+	margin-left:9%;
+}
+.icon{
+}
+.name{
+	text-align: center;  
+}
+form{
+	margin-left: 15%;
+	margin-right: 10%;
+	margin-top: 10%;
+}
+table, th{
+    border: 1px solid black;
+}
+footer{
+	margin-top:10%;
+}
+</style>
+</head>
+<header>
+	<div id="title">
+	<div id="logo"> 
+	<a href="PretStyle.html"><img src="images/log2.png" width="600" height="250"></a> 
+	</div>
+		<center>
+		<div id="nav">
+				<ul>
+				<div class="dropdown">
+					<li><button class="but" onclick="dropfunc()"> <a class="dropbtn" href="products.html"> Shop </a></button></li>
+						<div id="mydropdown" class= "content">
+							<a href="accessories.html"> Accessorize </a></a>
+							<a href="beauty.html"> Beautify </a></a>
+							<a href="clothes.html"> Clothing </a></a>
+							<a href="health.html"> Health </a></a>
+							<a href="footwear.html"> Shoes </a></a>
+						</div>
+				</div>
+					<li><a href="guide.html" class="active"> Guide </a></li> 	
+					<li><a href="blog.html" class="active"> Blog </a></li>
+					<li><a href="account.html" class="active"> My Account </a></li> 	
+					<li><a href="contact.html" class="active"> Contact Us </a></li> 	
+				</ul>
+		</div>
+	</center>
+</header>
+</header>
+<body>
+<div id="back">
+<center><h1>Pr&#233;t-Style Beauty </h1></center> 
+</div>
+<form>
+<TABLE style="width: 100%"> 
+<TR>
+<th>
+<div class="icon">
+<!--http://www.carolsdaughter.com/-->
+<p class="name"> CAROLS DAUGHTER <BR> MIMOSA HAIR HONEY</p>
+<img class="img" src="images/CD.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--https://africablogs.wordpress.com/category/baobab-cosmetics/page/5/-->
+<p class="name"> BAOBAB COSMETICS </p>
+<img class="img" src="images/BC.jpeg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--http://www.veganbeautyreview.com/2013/10/sheatruth-organic-raw-skin-hair-food.html-->
+<p class="name"> SHEA TRUTH SOAP </p>
+<img class="img" src="images/ST.jpEg">
+</div>
+</th>
+</TR>
+
+<TR>
+<th>
+<div class="icon">
+<!--http://www.thestyleandbeautydoctor.com/2014/10/black-opal-foundation-stick-swatches-review/-->
+<p class="name"> BLACK OPAL BEAUTY </p>
+<img class="img" src="images/BOB.jpEg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--http://kaoir.com/-->
+<p class="name"> KAOIR LIPSTICK </p>
+<img class="img" src="images/KO.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--http://tally-young.myshopify.com/collections/cosmetics-->
+<p class="name"> TALLY YOUNG COSMEICS</p>
+<img class="img" src="images/TY.PNG">
+</div>
+</th>
+</TR>
+
+
+<TR>
+<th>
+<div class="icon">
+<!--http://fashiontrendseeker.com/2013/05/08/china-glaze-sunsational-summer-2013-nail-polish-collection/-->
+<p class="name"> CHINA GLAZE NAIL POLISH </p>
+<img class="img" src="images/CG.JPG">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--http://hailnails.tumblr.com/page/50-->
+<p class="name"> HAIL NAILS</p>
+<img class="img" src="images/HN.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--https://www.nailcandi.co.za/collections/cuticle-tattoos-->
+<p class="name"> NAIL CANDI CUTICAL TATTOS </p>
+<img class="img" src="images/NC.jpeg">
+</div>
+</th>
+</TR>
+</table>
+</form>
+</body>
+<footer>
+<div id="copy">
+	 <p id="cop">  &#169; 2016 P.S. Inc. &#174; All rights reserved </p>
+</div>
+<div id="icon">
+	<a href="https://www.facebook.com"><img src="images/fb.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://twitter.com"><img src="images/twit.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.instagram.com/?hl=en"><img src="images/insta.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.tumblr.com"><img src="images/tumb.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.youtube.com"><img src="images/yt.png" style="width: 50px;height: 50px;"></a>
+</div>
+</footer>
+<script type="text/javascript">
+	function dropfunc() {
+	document.getElementById("mydropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

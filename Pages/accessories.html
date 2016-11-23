@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pr&#233;t-Style </title>
+	<link rel="stylesheet" type="text/css" href="css/temp.css">
+<style type="text/css">
+#back{
+	height: 55em;
+}
+.img{
+	height: 8em; 
+	width: 8em;
+	margin-left:10%;
+}
+.icon{
+
+}
+.name{
+	text-align: center;  
+}
+form{
+	margin-left: 15%;
+	margin-right: 10%;
+	margin-top: 13%;
+}
+table, th{
+    border: 1px solid black;
+}
+footer{
+	margin-top:13%;
+}
+</style>
+</head>
+<header>
+	<div id="title">
+	<div id="logo"> 
+	<a href="PretStyle.html"><img src="images/log2.png" width="600" height="250"></a> 
+	</div>
+		<center>
+		<div id="nav">
+				<ul>
+				<div class="dropdown">
+					<li><button class="but" onclick="dropfunc()"> <a class="dropbtn" href="products.html"> Shop </a></button></li>
+						<div id="mydropdown" class= "content">
+							<a href="accessories.html"> Accessorize </a></a>
+							<a href="beauty.html"> Beautify </a></a>
+							<a href="clothes.html"> Clothing </a></a>
+							<a href="health.html"> Health </a></a>
+							<a href="footwear.html"> Shoes </a></a>
+						</div>
+				</div>
+					<li><a href="guide.html" class="active"> Guide </a></li> 	
+					<li><a href="blog.html" class="active"> Blog </a></li>
+					<li><a href="account.html" class="active"> My Account </a></li> 	
+					<li><a href="contact.html" class="active"> Contact Us </a></li> 	
+				</ul>
+		</div>
+	</center>
+</header>
+<body>
+<div id="back">
+<center><h1>Pr&#233;t-Style Accessories </h1></center>
+</div>
+<form>
+<TABLE style="width: 100%"> 
+<TR>
+<th>
+<div class="icon">
+<!--http://www.adeledejak.com/-->
+<p class="name"> ADELE DEJAK</p>
+<img class="img" src="images/AD.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--http://octopushandbags.com/handbags/-->
+<p class="name"> AIYDA [ETHIOPIA] </p>
+<img class="img" src="images/AE.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--https://gundara.com/SHOP/clutches/fold-over-clutch-evening-bag-handmade-zambia-->
+<p class="name"> JACKAL and HIDE </p>
+<img class="img" src="images/JH.jpeg">
+</div>
+</th>
+</TR>
+
+<TR>
+<th>
+<div class="icon">
+<!--https://www.pinterest.com/MonikaEttlin/modern-jewelry-beadilicious-archive/-->
+<p> BELOVED BEADWORK </p>
+<img class="img" src="images/BB.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--https://sparkleshock.wordpress.com/2010/06/29/designer-of-the-day-anita-quansah/-->
+<p> ANITA QUANSAH </p>
+<img class="img" src="images/AQ.jpg">
+</div>
+</th>
+
+<th>
+<<div class="icon">
+<!--http://tdsblog.com/doreen-mashika-zanzibar-africa-feature/-->
+<p> DOREEN MASHIKA</p>
+<img class="img" src="images/DM.jpg">
+</div>
+</th>
+</TR>
+
+
+<TR>
+<th>
+<div class="icon">
+<!--https://www.africanbutterfly.com/-->
+<p class="name"> AFRICAN BUTTERFLY </p>
+<img class="img" src="images/AB.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--http://www.newbein.com/headdresses.html-->
+<p class="name"> NEWBIAN CRYSTAL HAIR PIECES </p>
+<img class="img" src="images/NEW.jpg">
+</div>
+</th>
+
+<th>
+<div class="icon">
+<!--https://www.etsy.com/listing/479666569/half-turban-hairscarf-headband-green-and?ref=market-->
+<p class="name"> INDIRA DE PARIS TURBANS </p>
+<img class="img" src="images/IDP.jpg">
+</div>
+</th>
+</TR>
+</table>
+</form>
+</body>
+<footer>
+<div id="copy">
+	 <p id="cop">  &#169; 2016 P.S. Inc. &#174; All rights reserved </p>
+</div>
+<div id="icon">
+	<a href="https://www.facebook.com"><img src="images/fb.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://twitter.com"><img src="images/twit.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.instagram.com/?hl=en"><img src="images/insta.png" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.tumblr.com"><img src="images/tumb.svg" style="width: 50px; height: 50px;"></a>
+	<a href="https://www.youtube.com"><img src="images/yt.png" style="width: 50px;height: 50px;"></a>
+</div>
+</footer>
+<script type="text/javascript">
+	function dropfunc() {
+	document.getElementById("mydropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

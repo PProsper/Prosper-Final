@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Pr&#233;t-Style</title>
+	<style>
+	   html{
+	       background-color: black;
+	   }
+	   body{
+	       margin-right: 20%;
+	   }
+	   #red,#yel,#fush,#blue,#ps,#but{
+	       position: absolute;
+	   }
+	   #red{
+	       margin-left: 10%;
+	       margin-top: 7%;
+	   }
+	   #yel{
+	       margin-left:20%;
+	   }
+	   #blue{
+	       margin-right: 15%;
+	       margin-top: 50%;
+	   }
+	   #fush{
+	       margin-top: 5%;
+	       margin-bottom: 10%;
+	       margin-right: 2%;
+	   }
+	   #ps{
+	       margin-bottom: 20%;
+	       margin-top: 10%;
+	       margin-right: 15%;
+	   }
+	   #but{
+	       margin-top: 49%;
+	       margin-right: 49%;
+	       width: 20%;
+	       background-color: rgba(205,146,226,.9);
+	       padding: 3%;
+	       font-size: 24pt;
+	       text-align: center;
+	   }
+	</style>
+</head>
+
+<body onload="move(); move2(); move3();move4();move5();move6()">
+	<div id="but">
+		<a href="guide.html">Enter</a>
+	</div>
+
+
+	<div id="red"><img src="images/red.jpg">
+	</div>
+
+
+	<div id="yel"><img src="images/yel.jpg">
+	</div>
+
+
+	<div id="fush"><img src="images/fush.jpg">
+	</div>
+
+
+	<div id="blue"><img src="images/blue.jpg">
+	</div>
+
+
+	<div id="ps"><img src="images/ps.jpg">
+	</div>
+	<script type="text/javascript">
+	   function move6(){       
+	           var elem = document.getElementById("but");
+	           var pos = -300;
+	           var id = setInterval(frame, 1);
+	           function frame(){
+	               if (pos == 1){
+	                   clearInterval(id);
+	               } else{
+	                   pos++;
+	                   elem.style.top = pos + "px";
+	                   elem.style.right = pos + "px";
+	               }
+	           }
+	       }   
+	       function move(){
+	           var elem = document.getElementById("red");
+	           var pos = -400;
+	           var id = setInterval(frame, 1);
+	           function frame(){
+	               if (pos == 40){
+	                   clearInterval(id);
+	               } else{
+	                   pos++;
+	                   elem.style.top = pos + "px";
+	                   //elem.style.bottom = pos + "px";
+	               }
+	           }
+	       }
+	       function move2(){       
+	           var elem = document.getElementById("yel");
+	           var pos = 0;
+	           var id = setInterval(frame, 1);
+	           function frame(){
+	               if (pos == 100){
+	                   clearInterval(id);
+	               } else{
+	                   pos++;
+	                   elem.style.bottom = pos + "px";
+	                   elem.style.left = pos + "px";
+	               }
+	           }
+	       }
+	       function move3(){       
+	           var elem = document.getElementById("fush");
+	           var pos = 0;
+	           var id = setInterval(frame, 1);
+	           function frame(){
+	               if (pos == 100){
+	                   clearInterval(id);
+	               } else{
+	                   pos++;
+	                   elem.style.top = pos + "px";
+	                   elem.style.right = pos + "px";
+	               }
+	           }
+	       }   
+	       function move4(){       
+	           var elem = document.getElementById("blue");
+	           var pos = -100;
+	           var id = setInterval(frame, 1);
+	           function frame(){
+	               if (pos == 100){
+	                   clearInterval(id);
+	               } else{
+	                   pos++;
+	                   elem.style.right = pos + "px";
+	                   elem.style.bottom = pos + "px";
+	               }
+	           }
+	       }   
+	       function move5(){       
+	           var elem = document.getElementById("ps");
+	           var pos = 0;
+	           var id = setInterval(frame, 1);
+	           function frame(){
+	               if (pos == 100){
+	                   clearInterval(id);
+	               } else{
+	                   pos++;
+	                   elem.style.right = pos + "px";
+	                   //elem.style.top = pos + "px";
+	               }
+	           }
+	       }
+	       
+	</script>
+</body>
+</html>

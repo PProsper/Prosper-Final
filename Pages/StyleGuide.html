@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pr&#233;t-Style Guide </title>
+		<link rel="stylesheet" type="text/css" href="temp.css">
+<style type="text/css">
+ 	img{
+ 		width: 500px; 
+ 		height: 650px;
+ 		border: solid 1pt;
+ 		border-color: #C40043;
+ 		display:inline;
+ 	}
+	.arr{
+		background-color: #F0FFF0;
+		border:solid;
+		border: 1;
+		border-color: black;
+	}
+	.fash{
+		display:inline;
+	}
+	#des{
+		width: 100px; 
+ 		height: 100px;
+		border: solid 2pt;
+ 		border-color: #C40043;
+ 		display:inline;
+	}
+	#logo{
+		border: none;
+	}
+</style>
+
+</head>
+<header>
+	<div id="title">
+	 <img id="logo" src="log.gif"> <h1>Pr&#233;t-Style Guide</h1> 
+	 <nav>
+		<a href="StyleGuide.html"> Guide </a> 
+		<a href="Product Categories.html"> Products </a> 
+		<a href="Accessories.html"> Accessorize </a>
+		<a href="Beauty.html"> Beautify </a>  
+		<a href="Clothes.html"> Get Dressed </a> 
+		<a href="Footwear.html"> Shoes </a> 
+		<a href="Health.html"> Health </a> 
+		<a href="Blog.html"> Blog </a> 
+		<a href="MyAccount.html"> My Account </a>  
+		<a href="ContactUs.html"> Contact Us </a>
+	</nav>
+	</div>
+</header>
+<body>
+	<div id="back">
+		<div>
+			<div class="fash"> <img src="fash1.jpg"></div>
+			<div class="fash"> <img src="fash2.jpg"></div>
+			<div class="fash"> <img src="fash3.jpg"></div>
+			<div class="fash"> <img src="fash4.jpg"></div>
+			<div class="fash"> <img src="fash5.jpg"></div>
+			<div class="fash"> <img src="fash6.jpg"></div>
+			<div class="fash"> <img src="fash7.jpg"></div>
+			<div id="des">
+			<p>
+			tsnaln asl;chasiocaspicjpasjc as;ocj
+			</p>
+			</div>
+			<center> <a class="arr" type="back-button" onclick="addproof(-1)">&#10094;</a>
+			<a class="arr" type="forward-button" onclick="addproof(+1)">&#10095;</a> </center>		
+	</div>	
+	</div>
+</body>
+<script>
+var fashlist = 1;
+fashroll(fashlist);
+
+function addproof(n) {
+	fashroll(fashlist += n);
+	}
+function fashroll(n){
+	var i;
+	var x =document.getElementsByClassName("fash");
+	if(n > x.length) {fashlist= 1}
+	if(n < 1) {fashlist = x.length}
+
+	//if (n<1) {fashlist =x.length}//
+	for (i =0; i < x.length; i++)
+		{x[i].style.display="none";}
+		{x[fashlist-1].style.display="block";}
+	}
+</script>
+</body>
+</html>

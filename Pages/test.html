@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Pr&#233;t-Style</title>
+	<link href="css/temp.css" rel="stylesheet" type="text/css">
+	<style>
+	#back{
+	       margin-top: .5%;
+	   }
+	input [type="text"]{
+	       font-family: sans-serif;
+	       font-size: 24px;
+	   }
+	input [type="text"]:focus{
+	       background-color:blue;
+	   }
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="title">
+			<div id="logo">
+				<a href="PretStyle.html"><img height="250" src="images/log2.png" width="600"></a>
+			</div>
+
+
+			<center>
+				<div id="nav">
+					<ul>
+						<li style="list-style: none; display: inline">
+							<div class="dropdown">
+								<ul>
+									<li><button class="but" onclick="dropfunc()"><a class="dropbtn" href="products.html">Shop</a></button>
+									</li>
+
+
+									<li style="list-style: none; display: inline">
+										<div class="content" id="mydropdown">
+											<a href="accessories.html">Accessorize</a> <a href="beauty.html">Beautify</a> <a href="clothes.html">Clothing</a> <a href="health.html">Health</a> <a href="footwear.html">Shoes</a> 
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<a class="active" href="guide.html">Guide</a>
+						</li>
+
+
+						<li>
+							<a class="active" href="blog.html">Blog</a>
+						</li>
+
+
+						<li>
+							<a class="active" href="account.html">My Account</a>
+						</li>
+
+
+						<li>
+							<a class="active" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</center>
+		</div>
+	</header>
+	<br>
+
+
+	<center>
+		<div id="back">
+			<center>
+				<h1>Contact Pr&#233;t-Style</h1>
+			</center>
+
+
+			<div id="mess">
+				<form>
+					<h3>Give Us Your Feedback!</h3>
+					Message:<br>
+					<input name="Message" style="width: 700px; height: 200px" type="text"><br>
+					<br>
+					<input name="Submit" type="button" value="Submit">
+				</form>
+			</div>
+		</div>
+	</center>
+	<style type="button/css">
+	   input[type="button"]{ 
+	       border: 2px solid black;
+	       padding-left:0;
+	       padding-top:0;
+	       padding-bottom:0.4em;
+	       padding-right: 0.4em;   
+	   }
+	   input[type="button"]:hover{ 
+	       padding: 3px; 
+	       background-color: rgba(245, 236,248, 1);
+	   }
+	</style>
+
+	<footer>
+		<div id="copy">
+			<p id="cop">&#169; 2016 P.S. Inc. &#174; All rights reserved</p>
+		</div>
+
+
+		<div id="icon">
+			<a href="https://www.facebook.com"><img src="images/fb.png" style="width: 50px; height: 50px;"></a> <a href="https://twitter.com"><img src="images/twit.svg" style="width: 50px; height: 50px;"></a> <a href="https://www.instagram.com/?hl=en"><img src="images/insta.png" style="width: 50px; height: 50px;"></a> <a href="https://www.tumblr.com"><img src="images/tumb.svg" style="width: 50px; height: 50px;"></a> <a href="https://www.youtube.com"><img src="images/yt.png" style="width: 50px;height: 50px;"></a>
+		</div>
+	</footer>
+	<script type="text/javascript">
+	   function dropfunc() {
+	   document.getElementById("mydropdown").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	 if (!event.target.matches('.dropbtn')) {
+
+	   var dropdowns = document.getElementsByClassName("content");
+	   var i;
+	   for (i = 0; i < dropdowns.length; i++) {
+	     var openDropdown = dropdowns[i];
+	     if (openDropdown.classList.contains('show')) {
+	       openDropdown.classList.remove('show');
+	     }
+	   }
+	 }
+	}
+	</script> 
+</body>
+</html>
